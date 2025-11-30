@@ -1,0 +1,16 @@
+.shop {
+  background-color: #f5f1db;
+}
+
+.shop h2 {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
