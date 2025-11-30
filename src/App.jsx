@@ -1,0 +1,11 @@
+import "./App.css";
+import Hero from "./components/Hero";
+
+export default function App() {
+  return (
+    <>
+      <Hero />
+      some mroe conetnt here
+    </>
+  );
+}
