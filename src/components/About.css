@@ -1,0 +1,7 @@
+.about {
+  padding: 3% 25%;
+  background-color: #fefff0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
