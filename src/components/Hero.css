@@ -13,7 +13,27 @@
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
+  gap: 10%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ffe1a9;
+  transition: background 0.2s;
+}
+
+.hero-buttons button:hover {
+  opacity: 0.9;
 }
