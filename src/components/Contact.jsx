@@ -34,9 +34,24 @@ export default function Contact() {
   return (
     <div className="contact">
       <h2>Επικοινωνία</h2>
-      <Card icon={address} title={addressTitle} text={addressText}></Card>
-      <Card icon={phone} title={phoneTitle} text={phoneText}></Card>
-      <Card icon={mail} title={mailTitle} text={mailText}></Card>
+      <div className="cards">
+        <Card icon={address} title={addressTitle} text={addressText}></Card>
+        <Card icon={phone} title={phoneTitle} text={phoneText}></Card>
+        <Card icon={mail} title={mailTitle} text={mailText}></Card>
+      </div>
+      <div className="visit">
+        <h2>Ώρες Επισκεπτηρίου</h2>
+        <span>
+          <strong>Καθημερινές:</strong> 8:00 - 13:00 & 16:00 -19:00
+        </span>
+        <span>
+          <strong>Κυριακές:</strong> 7:00 - 13:00
+        </span>
+        <span style={{ fontSize: 14, marginBottom: 20, opacity: 0.7 }}>
+          Οι γυναίκες επισκέπτριες μπορούν να επισκεφτούν το αρχονταρίκι και το{" "}
+          καθολικό.
+        </span>
+      </div>
     </div>
   );
 }

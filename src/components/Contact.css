@@ -1,0 +1,40 @@
+.contact h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 94px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.visit h2 {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.visit {
+  background-color: rgba(208, 39, 39, 0.4);
+  width: 60%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  flex-shrink: 1;
+  min-width: 370px;
+}
