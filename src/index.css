@@ -8,3 +8,42 @@
 body {
   font-family: "Source Serif 4", serif;
 }
+
+h1,
+h2,
+h3,
+p {
+  all: unset;
+  display: block;
+  margin: 0;
+  color: #000;
+  line-height: 1.2;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font: inherit;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  font-weight: 400;
+}
