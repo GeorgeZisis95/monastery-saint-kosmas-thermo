@@ -4,6 +4,7 @@ import Card from "./Card";
 import address from "../assets/address.svg";
 import phone from "../assets/phone.svg";
 import mail from "../assets/mail.svg";
+import { forwardRef } from "react";
 
 const addressTitle = <h3>Διεύθυνση</h3>;
 const addressText = (
@@ -30,9 +31,9 @@ const mailText = (
   </>
 );
 
-export default function Contact() {
+function Contact(_, ref) {
   return (
-    <div className="contact">
+    <div className="contact" ref={ref}>
       <h2>Επικοινωνία</h2>
       <div className="cards">
         <Card icon={address} title={addressTitle} text={addressText}></Card>
@@ -55,3 +56,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default forwardRef(Contact);

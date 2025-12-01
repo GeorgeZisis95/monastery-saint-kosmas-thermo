@@ -5,6 +5,7 @@ import Book2 from "../assets/Book2.jpg";
 import Book3 from "../assets/Book3.jpg";
 import Book4 from "../assets/Book4.jpg";
 import Book5 from "../assets/Book5.jpg";
+import { forwardRef } from "react";
 
 const text1 = (
   <>
@@ -93,9 +94,9 @@ const text5 = (
   </>
 );
 
-export default function Shop() {
+function Shop(_, ref) {
   return (
-    <div className="shop">
+    <section className="shop" ref={ref}>
       <h2>Εκδόσεις</h2>
       <div className="books">
         <Book image={Book5} text={text5} />
@@ -104,6 +105,8 @@ export default function Shop() {
         <Book image={Book2} text={text2} />
         <Book image={Book3} text={text3} />
       </div>
-    </div>
+    </section>
   );
 }
+
+export default forwardRef(Shop);
