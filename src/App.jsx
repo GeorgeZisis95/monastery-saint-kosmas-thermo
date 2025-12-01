@@ -2,7 +2,8 @@ import "./App.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Shop from "./components/Shop";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <About />
       <Shop />
       <Contact />
+      <Footer />
     </>
   );
 }
