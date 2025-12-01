@@ -1,5 +1,6 @@
 .shop {
   background-color: #f5f1db;
+  padding-bottom: 50px;
 }
 
 .shop h2 {
@@ -9,8 +10,15 @@
 
 .books {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 16px;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 780px) {
+  .books {
+    flex-direction: column;
+  }
 }

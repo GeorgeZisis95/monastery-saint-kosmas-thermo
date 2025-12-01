@@ -1,6 +1,5 @@
 .book {
-  width: 870px;
-  display: flex;
+  width: 210px;
   background-color: #fefff0;
 }
 
@@ -9,9 +8,46 @@
   box-shadow: 3px 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.visible-info button {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  background-color: #ffe1a9; /* primary color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.visible-info button:hover {
+  opacity: 0.85;
+}
+
 .text {
   padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+  > div {
+    overflow: hidden;
+  }
+}
+
+.text.show {
+  grid-template-rows: 1fr;
+}
+
+@media screen and (min-width: 780px) {
+  .book {
+    display: flex;
+  }
+
+  .book.show {
+    min-width: 800px;
+  }
+
+  .text {
+    transition: none;
+  }
 }
