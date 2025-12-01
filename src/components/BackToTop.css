@@ -1,0 +1,35 @@
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  font-weight: 400;
+  border-radius: 0.25rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1024px) {
+  .back-to-top {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .back-to-top::after {
+    content: "↑"; /* only show arrow */
+  }
+
+  .back-to-top span {
+    display: none; /* hide the text inside a span if you used one */
+  }
+}
