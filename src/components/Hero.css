@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: clamp(350px, 70vh, 600px);
+  height: clamp(400px, 70vh, 600px);
 }
 
 .hero h1 {
@@ -36,8 +36,28 @@
   cursor: pointer;
   background-color: #ffe1a9;
   transition: background 0.2s;
+  flex-shrink: 1;
+}
+
+.hero-buttons button h2 {
+  font-size: clamp(0.6rem, 3.5vw, 2rem);
 }
 
 .hero-buttons button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 680px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero-content {
+    justify-content: flex-end;
+  }
+
+  .hero-buttons {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
 }
