@@ -1,7 +1,13 @@
 .about {
-  padding: 3% 25%;
+  padding: 3% 10%;
   background-color: #fefff0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 3% 1rem;
+  }
 }
