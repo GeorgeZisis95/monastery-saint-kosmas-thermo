@@ -1,4 +1,5 @@
 .book {
+  flex: 0 0 auto;
   display: grid;
   width: 210px;
   grid-template-columns: 210px 0fr;

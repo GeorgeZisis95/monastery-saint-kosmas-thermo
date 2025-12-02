@@ -14,11 +14,45 @@
   align-items: center;
   gap: 16px;
   overflow: hidden;
-  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex: 1;
+  padding: 0 20px;
+  scrollbar-width: none;
+}
+
+.books::-webkit ::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.scroll-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+  transition: background 0.2s ease;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 780px) {
   .books {
     flex-direction: column;
+  }
+  .scroll-button {
+    display: none;
   }
 }
