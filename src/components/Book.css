@@ -1,6 +1,32 @@
 .book {
+  display: grid;
   width: 210px;
-  background-color: #fefff0;
+  grid-template-columns: 210px 0fr;
+  > .text {
+    margin-top: 10px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.book.show {
+  grid-template-columns: 210px 1fr;
+  > .text {
+    margin-top: 0;
+    padding: 15px;
+    width: 600px;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  min-width: 850px;
 }
 
 .book img {
@@ -13,7 +39,7 @@
   text-align: center;
   box-sizing: border-box;
   padding: 8px 16px;
-  background-color: #ffe1a9; /* primary color */
+  background-color: #ffe1a9;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -24,30 +50,34 @@
   opacity: 0.85;
 }
 
-.text {
-  padding: 15px;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 300ms ease-in-out;
-  > div {
-    overflow: hidden;
-  }
-}
-
-.text.show {
-  grid-template-rows: 1fr;
-}
-
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 780px) {
   .book {
-    display: flex;
+    grid-template-columns: 210px;
+    grid-template-rows: 1fr 0fr;
+
+    > .text {
+      margin-top: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
   }
 
   .book.show {
-    min-width: 800px;
-  }
+    grid-template-columns: 210px;
+    grid-template-rows: 0.5fr 1fr;
 
-  .text {
-    transition: none;
+    > .text {
+      margin-top: 0;
+      padding: 15px;
+      width: 180px;
+      height: auto;
+      overflow: visible;
+      opacity: 1;
+      text-align: center;
+    }
+    min-width: 210px;
   }
 }
