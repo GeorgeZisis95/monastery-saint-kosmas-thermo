@@ -9,15 +9,16 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  background-color: #fefff0;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 94px;
   flex-wrap: wrap;
-  flex-shrink: 0;
+  gap: clamp(30px, 5vw, 80px);
+  flex-shrink: 1;
 }
 
 .visit h2 {
@@ -36,5 +37,23 @@
   text-align: center;
   gap: 30px;
   flex-shrink: 1;
-  min-width: 370px;
+  min-width: 290px;
+}
+
+.sub-script {
+  width: 80%;
+  font-size: clamp(0.6rem, 0.9vw, 1.1rem);
+  margin-bottom: 40px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 0;
+  }
+  .visit {
+    width: 50%;
+  }
 }

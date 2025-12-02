@@ -52,3 +52,14 @@ span {
   font-size: clamp(0.9rem, 2.2vw, 1.1rem);
   font-weight: 400;
 }
+
+a {
+  color: #ffeded;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff5f5;
+  text-decoration: underline;
+}

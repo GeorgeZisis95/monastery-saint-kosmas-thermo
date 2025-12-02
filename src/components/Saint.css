@@ -1,0 +1,10 @@
+.saint {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #7c1d1d;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}

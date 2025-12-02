@@ -18,3 +18,9 @@
 .text {
   padding: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+  .card {
+    transform: scale(0.8);
+  }
+}

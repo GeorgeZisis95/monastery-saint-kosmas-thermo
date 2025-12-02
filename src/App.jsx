@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useRef } from "react";
 import BackToTop from "./components/BackToTop";
+import Saint from "./components/Saint";
 
 export default function App() {
   const shopRef = useRef(null);
@@ -15,6 +16,7 @@ export default function App() {
     <>
       <BackToTop />
       <Hero shopRef={shopRef} contactRef={contactRef} />
+      <Saint />
       <About />
       <Shop ref={shopRef} />
       <Contact ref={contactRef} />

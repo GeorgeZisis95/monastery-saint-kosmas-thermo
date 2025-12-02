@@ -6,7 +6,7 @@ export default function Book({ book, isOpen, onToggle }) {
       <div className="visible-info">
         <img src={book.image} alt="book1" />
         <button className="toggle-button" onClick={onToggle}>
-          {isOpen ? "Απόκρυψη" : "Πληροφορίες"}
+          {isOpen ? "Εξώφυλλο" : "Απόσπασμα"}
         </button>
       </div>
       <div className={`text ${isOpen ? "show" : ""}`}>{book.content}</div>
